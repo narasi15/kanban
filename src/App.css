@@ -2,37 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-link {
+  color: #61dafb;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(10px + 1.5vmin);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 50px;
+  font-weight: 900;
+  color:aliceblue;
 }
+
+h3 {
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.column {
+  border: 1px solid indigo;
+  padding: 1rem
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+.ul {
+  width: 20%;
+  min-height: 300px;
+  
+}
+
+li {
+    padding: 5% 2%;
+    background-color: #74e6cd;
+    text-align: center;
+    margin-bottom: 15px;
+    width: calc(100%/2 - 10px);
+    cursor: move;
+
+}
+
+li:active {
+    background-color: #73a2e9;
+    color: white;
+}
+
+
